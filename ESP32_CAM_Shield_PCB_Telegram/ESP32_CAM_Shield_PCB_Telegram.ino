@@ -25,12 +25,14 @@ const char* password = "REPLACE_WITH_YOUR_PASSWORD";
 // Use @myidbot to find out the chat ID of an individual or a group
 // Also note that you need to click "start" on a bot before it can
 // message you
-#define CHAT_ID "XXXXXXXXXX"
+String chatId = "XXXXXXXXXX";
 
 // Initialize Telegram BOT
-#define BOTtoken "XXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"  // your Bot Token (Get from Botfather)
+String BOTtoken = "XXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 
 bool sendPhoto = false;
+
+WiFiClientSecure clientTCP;
 
 UniversalTelegramBot bot(BOTtoken, clientTCP);
 
